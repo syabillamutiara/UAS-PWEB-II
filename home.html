@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Home Laravel</title>
+        <script src='../script-home.js' defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+        color: white;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        /* background-image: url('../pagi.jpg'); */
+        margin: 0 auto;
+      }
+      .container {
+        width: 550px;
+        height: 270px;
+        border: 2px solid white;
+        border-radius: 15px;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 0px 30px #fff;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        margin: -25px 0 0 -25px;
+      }
+      .welcome {
+        width: auto; 
+        color: white; 
+        float: center; 
+        font-size: 20px;
+        margin: 0 auto; 
+        padding: 10px; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        animation: typing 6s steps(24) 1s infinite; 
+      }
+      .menu-bar {
+        margin: 40px 40px 40px 40px;
+        
+      }
+  
+      .menu-bar a {
+          color: white;
+          padding: 10px 20px;
+          border: 2px solid white;
+          text-decoration: none;
+          border-radius: 50px;
+          margin: 15px;
+      }
+        
+      .menu-bar a:hover {
+          background-color: #0f0c27;
+          color: white;
+          transition-duration:0.5s;
+      }
+      
+      .time {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      
+      
+      @keyframes typing { 
+        from { 
+          width: 0px; 
+        } 
+        to { 
+          width: 310px; 
+        } 
+      } 
+    </style>
+    </head>
+    <body>
+        <div class='container'>
+          <div class='welcome'>
+            <h3>WELCOME TO MY LARAVEL</h3>
+          </div>
+          <div class='time'>
+            <span id='hours'>00</span>
+            <span>:</span>
+            <span id='minutes'>00</span>
+            <span>:</span>
+            <span id='seconds'>00</span>
+            <span id='session'></span> <br>
+            <span id='ucapan'>Hello, Good Morning!</span>
+          </div>
+          <div class='menu-bar'>
+              <a href="profile"><span></span>Profile</a>
+              <a href="portofolio"><span></span>Portofolio</a>
+              <a href="hubungi-saya"><span></span>Contact Me</a>
+          </div>
+        </div>
+    </body>
+</html>
